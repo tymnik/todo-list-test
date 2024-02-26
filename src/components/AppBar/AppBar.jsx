@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { StatusFilter } from 'components/StatusFilter/StatusFilter';
 
 import styles from './AppBar.module.css';
