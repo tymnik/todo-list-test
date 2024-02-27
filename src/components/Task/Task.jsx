@@ -22,14 +22,15 @@ const Task = ({ task }) => {
         onChange={handleToggle}
       />
       <div>
-        <p className={styles.text}>
+        <p className={styles.nameText}>
           <strong>Task:</strong> {task.text.name}
         </p>
-        <p className={styles.text}>
+        <p className={styles.descriptionText}>
           <strong>Description:</strong>
           {task.text.description || 'No Description'}
         </p>
-        <p className={styles.text}>{task.text.dueDate}</p>
+        <p className={styles.dateText}>{task.text.dueDate}</p>
+        <p className={styles.categoryText}>{task.text.category}</p>
       </div>
       <button className={styles.btn} onClick={handleDelete}>
         <FcFullTrash style={{ fontSize: '20px' }} />

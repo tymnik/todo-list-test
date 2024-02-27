@@ -10,13 +10,15 @@ const TodoForm = () => {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [dueDate, setDueDate] = useState('');
+  const [category, setCategory] = useState('work');
 
   const handleSubmit = event => {
     event.preventDefault();
-    dispatch(addTask({ name, description, dueDate }));
+    dispatch(addTask({ name, description, dueDate, category }));
     setName('');
     setDescription('');
     setDueDate('');
+    setCategory('work');
   };
 
   return (
@@ -42,7 +44,6 @@ const TodoForm = () => {
           value={description}
           onChange={e => setDescription(e.target.value)}
           placeholder="Enter some details..."
-          required
         />
       </div>
       <div>
@@ -53,6 +54,18 @@ const TodoForm = () => {
           value={dueDate}
           onChange={e => setDueDate(e.target.value)}
         />
+      </div>
+      <div>
+        <label htmlFor="category">Category</label>
+        <select
+          id="category"
+          value={category}
+          onChange={e => setCategory(e.target.value)}
+        >
+          <option value="work">Work</option>
+          <option value="study">Study</option>
+          <option value="personal">Personal</option>
+        </select>
       </div>
       <button type="submit">Add task</button>
     </form>
