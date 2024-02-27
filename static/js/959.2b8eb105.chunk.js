@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktodo_list_test=self.webpackChunktodo_list_test||[]).push([[959],{959:function(t,e,s){s.r(e);s(791);var n=s(184);e.default=function(){return(0,n.jsx)("div",{children:"CompletedTasksPage"})}}}]);
-//# sourceMappingURL=959.2b8eb105.chunk.js.map
