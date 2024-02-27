@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/todo-list-test/static/css/main.094fbfac.css",
-    "main.js": "/todo-list-test/static/js/main.8b1df4db.js",
+    "main.js": "/todo-list-test/static/js/main.630a6df5.js",
     "static/css/436.31d6cfe0.chunk.css": "/todo-list-test/static/css/436.31d6cfe0.chunk.css",
-    "static/js/436.8ca26733.chunk.js": "/todo-list-test/static/js/436.8ca26733.chunk.js",
-    "static/js/959.ae255366.chunk.js": "/todo-list-test/static/js/959.ae255366.chunk.js",
-    "static/js/729.e96f1936.chunk.js": "/todo-list-test/static/js/729.e96f1936.chunk.js",
+    "static/js/436.65ad0760.chunk.js": "/todo-list-test/static/js/436.65ad0760.chunk.js",
+    "static/js/959.51e9852d.chunk.js": "/todo-list-test/static/js/959.51e9852d.chunk.js",
+    "static/js/729.b639219d.chunk.js": "/todo-list-test/static/js/729.b639219d.chunk.js",
+    "static/js/617.06fb2fbd.chunk.js": "/todo-list-test/static/js/617.06fb2fbd.chunk.js",
     "static/css/684.31d6cfe0.chunk.css": "/todo-list-test/static/css/684.31d6cfe0.chunk.css",
     "index.html": "/todo-list-test/index.html",
     "main.094fbfac.css.map": "/todo-list-test/static/css/main.094fbfac.css.map",
-    "main.8b1df4db.js.map": "/todo-list-test/static/js/main.8b1df4db.js.map",
-    "436.8ca26733.chunk.js.map": "/todo-list-test/static/js/436.8ca26733.chunk.js.map",
-    "959.ae255366.chunk.js.map": "/todo-list-test/static/js/959.ae255366.chunk.js.map",
-    "729.e96f1936.chunk.js.map": "/todo-list-test/static/js/729.e96f1936.chunk.js.map"
+    "main.630a6df5.js.map": "/todo-list-test/static/js/main.630a6df5.js.map",
+    "436.65ad0760.chunk.js.map": "/todo-list-test/static/js/436.65ad0760.chunk.js.map",
+    "959.51e9852d.chunk.js.map": "/todo-list-test/static/js/959.51e9852d.chunk.js.map",
+    "729.b639219d.chunk.js.map": "/todo-list-test/static/js/729.b639219d.chunk.js.map",
+    "617.06fb2fbd.chunk.js.map": "/todo-list-test/static/js/617.06fb2fbd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.094fbfac.css",
-    "static/js/main.8b1df4db.js"
+    "static/js/main.630a6df5.js"
   ]
 }
