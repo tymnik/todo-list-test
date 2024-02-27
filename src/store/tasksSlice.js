@@ -24,8 +24,17 @@ const tasksSlice = createSlice({
       localStorage.setItem('tasks', JSON.stringify(updatedTasks));
       return updatedTasks;
     },
+    setDueDate(state, action) {
+      const { taskId, dueDate } = action.payload;
+      const updatedTasks = state.map(task =>
+        task.id === taskId ? { ...task, dueDate } : task
+      );
+      localStorage.setItem('tasks', JSON.stringify(updatedTasks));
+      return updatedTasks;
+    },
   },
 });
 
-export const { addTask, deleteTask, toggleCompleted } = tasksSlice.actions;
+export const { addTask, deleteTask, toggleCompleted, setDueDate } =
+  tasksSlice.actions;
 export default tasksSlice.reducer;

@@ -1,19 +1,21 @@
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-
 import { addTask } from '../../store/actions';
 
 import styles from './TodoForm.module.css';
 
 const TodoForm = () => {
   const dispatch = useDispatch();
+  const [name, setName] = useState('');
+  const [description, setDescription] = useState('');
+  const [dueDate, setDueDate] = useState('');
 
   const handleSubmit = event => {
     event.preventDefault();
-    const form = event.target;
-    const name = form.elements.name.value;
-    const description = form.elements.description.value;
-    dispatch(addTask({ name, description }));
-    form.reset();
+    dispatch(addTask({ name, description, dueDate }));
+    setName('');
+    setDescription('');
+    setDueDate('');
   };
 
   return (
@@ -24,8 +26,10 @@ const TodoForm = () => {
           id="inputTitle"
           className={styles.field}
           type="text"
-          name="name"
+          value={name}
+          onChange={e => setName(e.target.value)}
           placeholder="Name your task..."
+          required
         />
       </div>
       <div>
@@ -34,8 +38,20 @@ const TodoForm = () => {
           id="inputDescription"
           className={styles.field}
           type="text"
-          name="description"
+          value={description}
+          onChange={e => setDescription(e.target.value)}
           placeholder="Enter some details..."
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="dueDate">Due Date</label>
+        <input
+          id="dueDate"
+          className={styles.field}
+          type="date"
+          value={dueDate}
+          onChange={e => setDueDate(e.target.value)}
         />
       </div>
       <button type="submit">Add task</button>

@@ -22,8 +22,13 @@ const Task = ({ task }) => {
       />
       <div>
         <p className={styles.text}>
-          {task.text.name}: {task.text.description || 'No Description'}
+          <strong>Task:</strong> {task.text.name}
         </p>
+        <p className={styles.text}>
+          <strong>Description:</strong>
+          {task.text.description || 'No Description'}
+        </p>
+        <p className={styles.text}>{task.text.dueDate}</p>
       </div>
       <button className={styles.btn} onClick={handleDelete}>
         close

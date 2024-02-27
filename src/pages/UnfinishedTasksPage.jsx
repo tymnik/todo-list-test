@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import Task from 'components/Task/Task';
+import { getTasks } from '../store/selectors';
 
 const UnfinishedTasksPage = () => {
-  return (
-    <div>UnfinishedTasksPage</div>
-  )
-}
+  const tasks = useSelector(getTasks);
+  const unfinishedTasks = tasks.filter(task => !task.completed);
 
-export default UnfinishedTasksPage
+  return (
+    <div>
+      <h2>Unfinished Tasks</h2>
+      {unfinishedTasks.map(task => (
+        <Task key={task.id} task={task} />
+      ))}
+    </div>
+  );
+};
+
+export default UnfinishedTasksPage;
