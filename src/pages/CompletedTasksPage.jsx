@@ -5,6 +5,8 @@ import CategorySearchSelector from 'components/CategorySearchSelector/CategorySe
 import Task from 'components/Task/Task';
 import { getTasks } from '../store/selectors';
 
+import styles from './CompletedTasksPage.module.css';
+
 const CompletedTasksPage = () => {
   const tasks = useSelector(getTasks);
   const [searchQuery, setSearchQuery] = useState('');
@@ -16,16 +18,20 @@ const CompletedTasksPage = () => {
   );
 
   return (
-    <div>
-      <CategorySearchSelector
-        searchQuery={searchQuery}
-        setSearchQuery={setSearchQuery}
-      />
-      <h2>Completed tasks</h2>
-      {completedTasks.map(task => (
-        <Task key={task.id} task={task} />
-      ))}
-    </div>
+    <section className={styles.pageSection}>
+      <div className={styles.pageWrapper}>
+        <h2 className={styles.heading}>Completed tasks</h2>
+        <CategorySearchSelector
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+        />
+      </div>
+      <div>
+        {completedTasks.map(task => (
+          <Task key={task.id} task={task} />
+        ))}
+      </div>
+    </section>
   );
 };
 

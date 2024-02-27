@@ -8,9 +8,7 @@ export const Button = ({
 }) => {
   return (
     <button
-      className={(styles.btn, {
-        [styles.isSelected]: selected,
-      })}
+      className={styles.btn}
       type={type}
       {...otherProps}
     >

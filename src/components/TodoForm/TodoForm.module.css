@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 290px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 744px) {
+    .form {
+        width: unset;
+        margin: unset;
+        justify-content: unset;
+        gap: 100px;
+    }
+}
+
+.formElement {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 200px;
+}
+
+@media screen and (min-width: 744px) {
+    .formElement {
+        max-width: unset;
+        width: 350px;
+    }
+}

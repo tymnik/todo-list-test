@@ -26,45 +26,49 @@ const TodoForm = () => {
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="inputTitle">Task</label>
-        <input
-          id="inputTitle"
-          className={styles.field}
-          type="text"
-          value={name}
-          onChange={e => setName(e.target.value)}
-          placeholder="Name your task..."
-          required
-        />
+        <div className={styles.formElement}>
+          <label htmlFor="inputTitle">Task</label>
+          <input
+            id="inputTitle"
+            className={styles.field}
+            type="text"
+            value={name}
+            onChange={e => setName(e.target.value)}
+            placeholder="Name your task..."
+            required
+          />
+        </div>
+        <div className={styles.formElement}>
+          <label htmlFor="inputDescription">Description</label>
+          <input
+            id="inputDescription"
+            className={styles.field}
+            type="text"
+            value={description}
+            onChange={e => setDescription(e.target.value)}
+            placeholder="Enter some details..."
+          />
+        </div>
+        <div className={styles.formElement}>
+          <label htmlFor="dueDate">Due Date</label>
+          <input
+            id="dueDate"
+            type="date"
+            value={dueDate}
+            onChange={e => setDueDate(e.target.value)}
+          />
+        </div>
+        <div className={styles.formElement}>
+          <label htmlFor="category">Category</label>
+          <CategorySearchSelector
+            searchQuery={category}
+            setSearchQuery={setCategory}
+          />
+        </div>
       </div>
       <div>
-        <label htmlFor="inputDescription">Description</label>
-        <input
-          id="inputDescription"
-          className={styles.field}
-          type="text"
-          value={description}
-          onChange={e => setDescription(e.target.value)}
-          placeholder="Enter some details..."
-        />
+        <Button type="submit">Add task</Button>
       </div>
-      <div>
-        <label htmlFor="dueDate">Due Date</label>
-        <input
-          id="dueDate"
-          type="date"
-          value={dueDate}
-          onChange={e => setDueDate(e.target.value)}
-        />
-      </div>
-      <div>
-        <label htmlFor="category">Category</label>
-        <CategorySearchSelector
-          searchQuery={category}
-          setSearchQuery={setCategory}
-        />
-      </div>
-      <Button type="submit">Add task</Button>
     </form>
   );
 };
