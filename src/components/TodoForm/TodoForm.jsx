@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+
 import { addTask } from '../../store/actions';
 
 import styles from './TodoForm.module.css';
@@ -48,7 +49,6 @@ const TodoForm = () => {
         <label htmlFor="dueDate">Due Date</label>
         <input
           id="dueDate"
-          className={styles.field}
           type="date"
           value={dueDate}
           onChange={e => setDueDate(e.target.value)}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { FcFullTrash } from 'react-icons/fc';
 
 import { deleteTask, toggleCompleted } from '../../store/tasksSlice';
 
@@ -31,7 +32,7 @@ const Task = ({ task }) => {
         <p className={styles.text}>{task.text.dueDate}</p>
       </div>
       <button className={styles.btn} onClick={handleDelete}>
-        close
+        <FcFullTrash style={{ fontSize: '20px' }} />
       </button>
     </div>
   );
