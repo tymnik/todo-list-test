@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
+import CategorySearchSelector from 'components/CategorySearchSelector/CategorySearchSelector';
+import { Button } from 'components/Button/Button';
 import { addTask } from '../../store/actions';
 
 import styles from './TodoForm.module.css';
@@ -57,17 +59,12 @@ const TodoForm = () => {
       </div>
       <div>
         <label htmlFor="category">Category</label>
-        <select
-          id="category"
-          value={category}
-          onChange={e => setCategory(e.target.value)}
-        >
-          <option value="work">Work</option>
-          <option value="study">Study</option>
-          <option value="personal">Personal</option>
-        </select>
+        <CategorySearchSelector
+          searchQuery={category}
+          setSearchQuery={setCategory}
+        />
       </div>
-      <button type="submit">Add task</button>
+      <Button type="submit">Add task</Button>
     </form>
   );
 };

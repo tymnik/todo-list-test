@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
+
+import CategorySearchSelector from 'components/CategorySearchSelector/CategorySearchSelector';
 import Task from 'components/Task/Task';
 import { getTasks } from '../store/selectors';
 
 const UnfinishedTasksPage = () => {
   const tasks = useSelector(getTasks);
-  const unfinishedTasks = tasks.filter(task => !task.completed);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const unfinishedTasks = tasks.filter(
+    task =>
+      !task.completed &&
+      task.text.category.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div>
-      <h2>Unfinished Tasks</h2>
+      <CategorySearchSelector
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+      />
+      <h2>Unfinished tasks</h2>
       {unfinishedTasks.map(task => (
         <Task key={task.id} task={task} />
       ))}
