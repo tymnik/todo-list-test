@@ -1,28 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { persistStore } from 'redux-persist';
-import {
-  FLUSH,
-  REHYDRATE,
-  PAUSE,
-  PERSIST,
-  PURGE,
-  REGISTER,
-} from 'redux-persist';
 
+import { userReducer } from './users/reducers';
 import tasksReducer from './tasksSlice';
 import { filtersReducer } from './filtersSlice';
 
+
 export const store = configureStore({
   reducer: {
+    user: userReducer,
     tasks: tasksReducer,
     filters: filtersReducer,
   },
-  middleware: getDefaultMiddleware =>
-    getDefaultMiddleware({
-      serializableCheck: {
-        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-      },
-    }),
+  middleware: getDefaultMiddleware => getDefaultMiddleware(),
 });
-
-export const persistor = persistStore(store);

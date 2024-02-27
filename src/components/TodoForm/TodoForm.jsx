@@ -25,7 +25,7 @@ const TodoForm = () => {
           className={styles.field}
           type="text"
           name="name"
-          placeholder="Enter task text..."
+          placeholder="Name your task..."
         />
       </div>
       <div>
@@ -35,7 +35,7 @@ const TodoForm = () => {
           className={styles.field}
           type="text"
           name="description"
-          placeholder="Enter task description..."
+          placeholder="Enter some details..."
         />
       </div>
       <button type="submit">Add task</button>

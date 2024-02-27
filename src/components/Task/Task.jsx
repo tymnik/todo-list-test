@@ -6,7 +6,6 @@ import { deleteTask, toggleCompleted } from '../../store/tasksSlice';
 import styles from './Task.module.css';
 
 const Task = ({ task }) => {
-  console.log(task);
   const dispatch = useDispatch();
 
   const handleDelete = () => dispatch(deleteTask(task.id));

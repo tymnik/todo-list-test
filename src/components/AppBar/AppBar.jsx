@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StatusFilter } from 'components/StatusFilter/StatusFilter';
+import { Navigation } from 'components/Navigation/Navigation';
 
 import styles from './AppBar.module.css';
 
@@ -9,7 +9,7 @@ const AppBar = () => {
     <header className={styles.wrapper}>
       <section className={styles.section}>
         <h2 className={styles.title}>Filter by status</h2>
-        <StatusFilter />
+        <Navigation />
       </section>
     </header>
   );
