@@ -1,16 +1,27 @@
 .pageSection {
     padding: 10px 20px 20px 20px;
+    max-width: 660px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 744px) {
     .pageSection {
         padding: 20px 40px 40px 40px;
+        max-width: 740px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .pageSection {
+        max-width: 1340px;
+        padding: 20px 0 40px;
     }
 }
 
 .pageWrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
     margin-bottom: 20px;
     align-items: center;
 }
@@ -28,5 +39,18 @@
 @media screen and (min-width: 1280px) {
     .heading {
         font-size: 32px;
+    }
+}
+
+.filteredList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 744px) {
+    .filteredList {
+        gap: 20px;
     }
 }

@@ -26,7 +26,7 @@ const UnfinishedTasksPage = () => {
           setSearchQuery={setSearchQuery}
         />
       </div>
-      <div>
+      <div className={styles.filteredList}>
         {unfinishedTasks.map(task => (
           <Task key={task.id} task={task} />
         ))}
