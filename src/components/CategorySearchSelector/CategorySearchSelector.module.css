@@ -1,0 +1,20 @@
+.selector {
+    max-width: 290px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+.selector:focus {
+    border-color: #f09819;
+}
+
+@media screen and (min-width: 744px) {
+    .selector {
+        max-width: unset;
+        width: 320px;
+    }
+}

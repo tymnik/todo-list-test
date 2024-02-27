@@ -29,12 +29,14 @@ const TodoList = () => {
   const visibleTasks = getVisibleTasks(tasks, statusFilter, searchQuery);
 
   return (
-    <div>
-      <h3>Find your tasks by category</h3>
-      <CategorySearchSelector
-        searchQuery={searchQuery}
-        setSearchQuery={setSearchQuery}
-      />
+    <section className={styles.todoList}>
+      <div className={styles.pageWrapper}>
+        <h3 className={styles.todoListHeading}>Find your tasks by category</h3>
+        <CategorySearchSelector
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+        />
+      </div>
       <ul className={styles.list}>
         {visibleTasks.map(task => (
           <li className={styles.listItem} key={task.id}>
@@ -42,7 +44,7 @@ const TodoList = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 

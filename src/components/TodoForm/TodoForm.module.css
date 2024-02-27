@@ -1,5 +1,6 @@
 .form {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 290px;
@@ -11,7 +12,21 @@
         width: unset;
         margin: unset;
         justify-content: unset;
-        gap: 100px;
+    }
+}
+
+.formInputBlock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 744px) {
+    .formInputBlock {
+        gap: 20px;
     }
 }
 
@@ -19,12 +34,59 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    max-width: 200px;
+    width: 290px;
 }
 
 @media screen and (min-width: 744px) {
     .formElement {
         max-width: unset;
-        width: 350px;
+        width: 320px;
     }
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #f09819;
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+input[type="text"]:not(:placeholder-shown) {
+    border-color: #b8f315;
+}
+
+input[type="date"] {
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus {
+    border-color: #f09819;
+    outline: none;
+}
+
+input[type="date"]::placeholder {
+    color: #aaa;
+}
+
+input[type="date"]:not(:placeholder-shown) {
+    border-color: #f09819;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 500;
 }

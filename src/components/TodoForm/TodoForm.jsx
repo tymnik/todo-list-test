@@ -25,7 +25,7 @@ const TodoForm = () => {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <div>
+      <div className={styles.formInputBlock}>
         <div className={styles.formElement}>
           <label htmlFor="inputTitle">Task</label>
           <input

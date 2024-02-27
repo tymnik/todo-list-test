@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { FcFullTrash } from 'react-icons/fc';
+import { FcFullTrash, FcApproval } from 'react-icons/fc';
 
 import { deleteTask, toggleCompleted } from '../../store/tasksSlice';
 
@@ -15,26 +15,38 @@ const Task = ({ task }) => {
 
   return (
     <div className={styles.wrapper}>
-      <input
-        type="checkbox"
-        className={styles.checkbox}
-        checked={task.completed}
-        onChange={handleToggle}
-      />
-      <div>
-        <p className={styles.nameText}>
-          <strong>Task:</strong> {task.text.name}
-        </p>
-        <p className={styles.descriptionText}>
-          <strong>Description:</strong>
-          {task.text.description || 'No Description'}
-        </p>
-        <p className={styles.dateText}>{task.text.dueDate}</p>
-        <p className={styles.categoryText}>{task.text.category}</p>
+      <div className={styles.checkboxBlock}>
+        <p className={styles.checkboxLabel}>Done</p>
+        <div className={styles.checkboxWrapper}>
+          {task.completed ? (
+            <FcApproval
+              className={styles.checkboxIconChecked}
+              onClick={handleToggle}
+              style={{ fontSize: '20px' }}
+            />
+          ) : (
+            <div className={styles.checkbox} onClick={handleToggle}></div>
+          )}
+        </div>
       </div>
-      <button className={styles.btn} onClick={handleDelete}>
-        <FcFullTrash style={{ fontSize: '20px' }} />
-      </button>
+      <div className={styles.taskDetails}>
+        <div>
+          <p className={styles.nameText}>
+            <strong>Task:</strong> {task.text.name}
+          </p>
+          <p className={styles.descriptionText}>
+            <strong>Description:</strong>{' '}
+            {task.text.description || 'No Description'}
+          </p>
+          <p className={styles.dateText}>{task.text.dueDate}</p>
+        </div>
+      </div>
+      <div className={styles.taskAdditional}>
+        <p className={styles.categoryText}>{task.text.category}</p>
+        <button className={styles.btn} onClick={handleDelete}>
+          <FcFullTrash style={{ fontSize: '20px' }} />
+        </button>
+      </div>
     </div>
   );
 };
