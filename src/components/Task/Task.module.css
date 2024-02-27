@@ -19,7 +19,7 @@
 
 .checkboxBlock {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     gap: 16px;
 }
@@ -36,6 +36,7 @@
     max-height: 120px;
     overflow-y: auto;
 }
+
 .taskDetails div {
     padding-right: 16px;
     box-sizing: content-box;
