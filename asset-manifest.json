@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/todo-list-test/static/css/main.0f627faf.css",
-    "main.js": "/todo-list-test/static/js/main.2e61fce2.js",
-    "static/css/689.f0027548.chunk.css": "/todo-list-test/static/css/689.f0027548.chunk.css",
-    "static/js/689.508fb5cc.chunk.js": "/todo-list-test/static/js/689.508fb5cc.chunk.js",
-    "static/css/959.986f94c1.chunk.css": "/todo-list-test/static/css/959.986f94c1.chunk.css",
-    "static/js/959.202a64fe.chunk.js": "/todo-list-test/static/js/959.202a64fe.chunk.js",
-    "static/css/729.986f94c1.chunk.css": "/todo-list-test/static/css/729.986f94c1.chunk.css",
-    "static/js/729.00a9d509.chunk.js": "/todo-list-test/static/js/729.00a9d509.chunk.js",
+    "main.css": "/todo-list-test/static/css/main.de7964c7.css",
+    "main.js": "/todo-list-test/static/js/main.f87a5dc0.js",
+    "static/css/689.f1ebac28.chunk.css": "/todo-list-test/static/css/689.f1ebac28.chunk.css",
+    "static/js/689.b4a885a9.chunk.js": "/todo-list-test/static/js/689.b4a885a9.chunk.js",
+    "static/css/959.49df36b8.chunk.css": "/todo-list-test/static/css/959.49df36b8.chunk.css",
+    "static/js/959.3530ea41.chunk.js": "/todo-list-test/static/js/959.3530ea41.chunk.js",
+    "static/css/729.49df36b8.chunk.css": "/todo-list-test/static/css/729.49df36b8.chunk.css",
+    "static/js/729.d4197592.chunk.js": "/todo-list-test/static/js/729.d4197592.chunk.js",
     "static/js/617.039fa562.chunk.js": "/todo-list-test/static/js/617.039fa562.chunk.js",
     "index.html": "/todo-list-test/index.html",
-    "main.0f627faf.css.map": "/todo-list-test/static/css/main.0f627faf.css.map",
-    "main.2e61fce2.js.map": "/todo-list-test/static/js/main.2e61fce2.js.map",
-    "689.f0027548.chunk.css.map": "/todo-list-test/static/css/689.f0027548.chunk.css.map",
-    "689.508fb5cc.chunk.js.map": "/todo-list-test/static/js/689.508fb5cc.chunk.js.map",
-    "959.986f94c1.chunk.css.map": "/todo-list-test/static/css/959.986f94c1.chunk.css.map",
-    "959.202a64fe.chunk.js.map": "/todo-list-test/static/js/959.202a64fe.chunk.js.map",
-    "729.986f94c1.chunk.css.map": "/todo-list-test/static/css/729.986f94c1.chunk.css.map",
-    "729.00a9d509.chunk.js.map": "/todo-list-test/static/js/729.00a9d509.chunk.js.map",
+    "main.de7964c7.css.map": "/todo-list-test/static/css/main.de7964c7.css.map",
+    "main.f87a5dc0.js.map": "/todo-list-test/static/js/main.f87a5dc0.js.map",
+    "689.f1ebac28.chunk.css.map": "/todo-list-test/static/css/689.f1ebac28.chunk.css.map",
+    "689.b4a885a9.chunk.js.map": "/todo-list-test/static/js/689.b4a885a9.chunk.js.map",
+    "959.49df36b8.chunk.css.map": "/todo-list-test/static/css/959.49df36b8.chunk.css.map",
+    "959.3530ea41.chunk.js.map": "/todo-list-test/static/js/959.3530ea41.chunk.js.map",
+    "729.49df36b8.chunk.css.map": "/todo-list-test/static/css/729.49df36b8.chunk.css.map",
+    "729.d4197592.chunk.js.map": "/todo-list-test/static/js/729.d4197592.chunk.js.map",
     "617.039fa562.chunk.js.map": "/todo-list-test/static/js/617.039fa562.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f627faf.css",
-    "static/js/main.2e61fce2.js"
+    "static/css/main.de7964c7.css",
+    "static/js/main.f87a5dc0.js"
   ]
 }
