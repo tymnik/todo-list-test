@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FcUp } from 'react-icons/fc';
+
 import styles from './ScrollToTop.module.css';
 
 const ScrollToTop= () => {
