@@ -1,8 +1,8 @@
-## Taskopia
+# Taskopia
 
 This is a simple to-do list application created using React.js + Redux. It allows users to add tasks, mark them as completed, sort by categories, and remove them from the list.
 
-# Features
+## Features
 
 Add Tasks: Easily add new tasks to the list.
 
