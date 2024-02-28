@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import CategorySearchSelector from 'components/CategorySearchSelector/CategorySearchSelector';
 import Button from 'components/Button/Button';
@@ -14,13 +16,24 @@ const TodoForm = () => {
   const [dueDate, setDueDate] = useState('');
   const [category, setCategory] = useState('work');
 
-  const handleSubmit = event => {
+  const handleSubmit = async event => {
     event.preventDefault();
-    dispatch(addTask({ name, description, dueDate, category }));
-    setName('');
-    setDescription('');
-    setDueDate('');
-    setCategory('work');
+
+    if (!name || !dueDate || !description) {
+      toast.error('Please fill in all required fields');
+      return;
+    }
+
+    try {
+      await dispatch(addTask({ name, description, dueDate, category }));
+      toast.success('Task added successfully');
+      setName('');
+      setDescription('');
+      setDueDate('');
+      setCategory('work');
+    } catch (error) {
+      toast.error('Failed to add task');
+    }
   };
 
   return (
@@ -35,7 +48,6 @@ const TodoForm = () => {
             value={name}
             onChange={e => setName(e.target.value)}
             placeholder="Name your task..."
-            required
           />
         </div>
         <div className={styles.formElement}>
@@ -69,6 +81,7 @@ const TodoForm = () => {
       <div>
         <Button type="submit">Add task</Button>
       </div>
+      <ToastContainer />
     </form>
   );
 };

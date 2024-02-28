@@ -38,7 +38,7 @@ const Task = ({ task }) => {
             <strong>Description:</strong>{' '}
             {task.text.description || 'No Description'}
           </p>
-          <p className={styles.dateText}>{task.text.dueDate}</p>
+          <p className={styles.dateText}><strong>{task.text.dueDate}</strong></p>
         </div>
       </div>
       <div className={styles.taskAdditional}>
