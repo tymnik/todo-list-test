@@ -15,5 +15,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </Provider>
 );
-
-// basename = '/todo-list-test';

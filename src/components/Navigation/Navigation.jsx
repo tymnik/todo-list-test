@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { statusFilters } from '../../store/constants';
 import { getStatusFilter } from '../../store/selectors';
 import { setStatusFilter } from '../../store/actions';
-import { Button } from 'components/Button/Button';
+import  Button  from 'components/Button/Button';
 
 import styles from './Navigation.module.css';
 

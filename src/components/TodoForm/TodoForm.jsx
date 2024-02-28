@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import CategorySearchSelector from 'components/CategorySearchSelector/CategorySearchSelector';
-import { Button } from 'components/Button/Button';
+import Button from 'components/Button/Button';
 import { addTask } from '../../store/actions';
 
 import styles from './TodoForm.module.css';

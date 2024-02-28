@@ -23,7 +23,9 @@
 
 .title {
     font-size: 24px;
+    color: #333;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: textAnimation 1.5s ease forwards;
 }
 
 @media screen and (min-width: 744px) {
@@ -35,5 +37,17 @@
 @media screen and (min-width: 1280px) {
     .title {
         font-size: 42px;
+    }
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

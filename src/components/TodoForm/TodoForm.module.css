@@ -54,15 +54,11 @@ input[type="text"] {
 
 input[type="text"]:focus {
     border-color: #f09819;
-    outline: none;
+    outline: none;   
 }
 
 input[type="text"]::placeholder {
-    color: #aaa;
-}
-
-input[type="text"]:not(:placeholder-shown) {
-    border-color: #b8f315;
+    color: #aaa;    
 }
 
 input[type="date"] {
@@ -76,14 +72,6 @@ input[type="date"] {
 input[type="date"]:focus {
     border-color: #f09819;
     outline: none;
-}
-
-input[type="date"]::placeholder {
-    color: #aaa;
-}
-
-input[type="date"]:not(:placeholder-shown) {
-    border-color: #f09819;
 }
 
 label {
