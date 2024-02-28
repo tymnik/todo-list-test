@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/todo-list-test/static/css/main.f1608bbe.css",
-    "main.js": "/todo-list-test/static/js/main.35b8dab9.js",
+    "main.js": "/todo-list-test/static/js/main.bec097eb.js",
     "static/css/689.611c1d44.chunk.css": "/todo-list-test/static/css/689.611c1d44.chunk.css",
-    "static/js/689.48ee11de.chunk.js": "/todo-list-test/static/js/689.48ee11de.chunk.js",
+    "static/js/689.22e6b740.chunk.js": "/todo-list-test/static/js/689.22e6b740.chunk.js",
     "static/css/959.986f94c1.chunk.css": "/todo-list-test/static/css/959.986f94c1.chunk.css",
-    "static/js/959.e98a9ecb.chunk.js": "/todo-list-test/static/js/959.e98a9ecb.chunk.js",
+    "static/js/959.202a64fe.chunk.js": "/todo-list-test/static/js/959.202a64fe.chunk.js",
     "static/css/729.986f94c1.chunk.css": "/todo-list-test/static/css/729.986f94c1.chunk.css",
-    "static/js/729.edf1a384.chunk.js": "/todo-list-test/static/js/729.edf1a384.chunk.js",
+    "static/js/729.00a9d509.chunk.js": "/todo-list-test/static/js/729.00a9d509.chunk.js",
     "static/js/617.039fa562.chunk.js": "/todo-list-test/static/js/617.039fa562.chunk.js",
     "index.html": "/todo-list-test/index.html",
     "main.f1608bbe.css.map": "/todo-list-test/static/css/main.f1608bbe.css.map",
-    "main.35b8dab9.js.map": "/todo-list-test/static/js/main.35b8dab9.js.map",
+    "main.bec097eb.js.map": "/todo-list-test/static/js/main.bec097eb.js.map",
     "689.611c1d44.chunk.css.map": "/todo-list-test/static/css/689.611c1d44.chunk.css.map",
-    "689.48ee11de.chunk.js.map": "/todo-list-test/static/js/689.48ee11de.chunk.js.map",
+    "689.22e6b740.chunk.js.map": "/todo-list-test/static/js/689.22e6b740.chunk.js.map",
     "959.986f94c1.chunk.css.map": "/todo-list-test/static/css/959.986f94c1.chunk.css.map",
-    "959.e98a9ecb.chunk.js.map": "/todo-list-test/static/js/959.e98a9ecb.chunk.js.map",
+    "959.202a64fe.chunk.js.map": "/todo-list-test/static/js/959.202a64fe.chunk.js.map",
     "729.986f94c1.chunk.css.map": "/todo-list-test/static/css/729.986f94c1.chunk.css.map",
-    "729.edf1a384.chunk.js.map": "/todo-list-test/static/js/729.edf1a384.chunk.js.map",
+    "729.00a9d509.chunk.js.map": "/todo-list-test/static/js/729.00a9d509.chunk.js.map",
     "617.039fa562.chunk.js.map": "/todo-list-test/static/js/617.039fa562.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1608bbe.css",
-    "static/js/main.35b8dab9.js"
+    "static/js/main.bec097eb.js"
   ]
 }
