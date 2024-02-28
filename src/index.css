@@ -7,7 +7,7 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #faf3e0;
+  background: #faf7e0;
   color: #333;
 }
 
@@ -58,5 +58,9 @@ html {
 
 button {
   padding: 0;
+  cursor: pointer;
+}
+
+input, select {
   cursor: pointer;
 }

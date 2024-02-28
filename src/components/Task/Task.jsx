@@ -16,7 +16,7 @@ const Task = ({ task }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.checkboxBlock}>
-        <p className={styles.checkboxLabel}>Done</p>
+        {!task.completed && <p className={styles.checkboxLabel}>Done</p>}
         <div className={styles.checkboxWrapper}>
           {task.completed ? (
             <FcApproval
